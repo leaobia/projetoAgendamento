@@ -8,6 +8,16 @@ public class PlanodeSaude {
 	private String categoria;
 	private String numeroCarteirinha;
 	private LocalDate validadeDoPlano;
+	private static int quantidade;
+	
+	// Construtores 
+	
+	public PlanodeSaude (String operadora) {
+		this.operadora = operadora; }
+	
+	public PlanodeSaude() {
+		this.quantidade++;
+	} // Default null 
 
 	// Métodos de acessos aos atributos
 
@@ -42,5 +52,8 @@ public class PlanodeSaude {
 	public LocalDate getValidadeDoPlano() {
 		return validadeDoPlano;
 	}
-
+	
+	public static int getQuantidade () {
+		return quantidade;
+	}
 }

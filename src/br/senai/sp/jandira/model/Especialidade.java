@@ -3,9 +3,32 @@ package br.senai.sp.jandira.model;
 import javax.swing.JOptionPane;
 
 public class Especialidade {
-
+	
+	// atributos 
+	
 	private String nome;
 	private String descriçao;
+
+	//Construtores
+		//Construtor é chamado sempre que eu uso o new
+		public Especialidade(String nome) {
+			this.nome = nome;
+			
+		}
+		
+		//Construtor defull, esse construtor tem o nome de classe
+		public Especialidade(String nome, String descriçao) {
+			this.nome = nome;
+			this.descriçao = descriçao;
+			
+		}
+
+		public Especialidade() { // Construtor default, o padrão
+			
+			
+		}
+	
+	
 
 	// Métodos de acesso aos atributos
 
