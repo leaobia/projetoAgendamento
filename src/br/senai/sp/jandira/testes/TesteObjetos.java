@@ -17,6 +17,7 @@ public class TesteObjetos {
 		Especialidade e1 = new Especialidade("Cardiologia");
 		e1.setNome("cardiologia");
 		e1.setDescriçao("Não deixa ter um ataque");
+                            
 		
 		// posicao 1
 		Especialidade e2 = new Especialidade("Gastroenterologia");
@@ -27,7 +28,20 @@ public class TesteObjetos {
 		e3.setNome("QUALQUER COISA");
 		
 		Especialidade e4 = new Especialidade("Cirurgiã", "uma boa médica");
-		
+                
+                             Especialidade e5 = new Especialidade();
+		e5.setNome("Especialidade 5");
+                
+                            System.out.println("Total  de especialidades  ------------------------->" + e1.getContador());
+                            
+                           System.out.println(e1.getCódigo() + "----" + e1.getNome());
+                           System.out.println(e2.getCódigo() + "----" + e2.getNome());
+                           System.out.println(e3.getCódigo() + "----" + e3.getNome());
+                           System.out.println(e4.getCódigo() + "----" + e4.getNome());
+                           System.out.println(e5.getCódigo() + "----" + e5.getNome());
+                          
+                  
+                            
 		ArrayList<Especialidade> especialidades = new ArrayList<>();
 		especialidades.add(e1);
 		especialidades.add(e2);
